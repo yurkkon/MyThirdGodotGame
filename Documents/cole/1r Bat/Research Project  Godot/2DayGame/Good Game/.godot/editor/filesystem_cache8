@@ -1,0 +1,17 @@
+bdbec74c6e5bd72edee867077d70896c
+::res://::1688219633
+export_presets.cfg::TextFile::-1::1688195283::0::1::::<><>::
+game.gd::GDScript::-1::1688200830::0::1::::<>Node<>::
+game.tscn::PackedScene::8254867098342646830::1688201000::0::1::::<><>::res://game.gd<>res://Player.gd<>uid://d172p8yut0xgq
+icon.svg::CompressedTexture2D::3687645036712346111::1688178209::1688178221::1::::<><>::
+ILikeThisFont.tres::Theme::9051899990792294960::1688179980::0::1::::<><>::uid://bo3rscy3vi4mk
+menu.gd::GDScript::-1::1688183986::0::1::::<>Control<>::
+menu.tscn::PackedScene::6629197299590968775::1688200968::0::1::::<><>::uid://bo3rscy3vi4mk<>res://menu.gd<>uid://d172p8yut0xgq<>uid://bvuet1jc4ty03<>uid://b3brdodfnwxls
+Player.gd::GDScript::-1::1688200967::0::1::::<>CharacterBody2D<>::
+ScoreUpdate.gd::GDScript::-1::1688200466::0::1::::<>Label<>::
+::res://assets/::1688179272
+bgsong.mp3::AudioStreamMP3::3901952132868978998::1688177329::1688179272::1::::<><>::
+clickSF.wav::AudioStreamWAV::4354810969777568580::1688178033::1688179272::1::::<><>::
+hit.wav::AudioStreamWAV::1469213234781433816::1688177933::1688179272::1::::<><>::
+MartianMono_SemiExpanded-Bold.ttf::FontFile::3427931548329155750::1677191376::1688179272::1::::<><>::
+SpawnSF.wav::AudioStreamWAV::3667152941117810286::1688178098::1688179272::1::::<><>::

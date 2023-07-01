@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://n1arhf22bbvf"]
+
+[ext_resource type="Script" path="res://obstacle.gd" id="1_401vi"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_7nqy7"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_vl7pt"]
+
+[node name="Obstacle" type="StaticBody2D"]
+script = ExtResource("1_401vi")
+
+[node name="LeftCol" type="CollisionPolygon2D" parent="."]
+position = Vector2(-0.023, 0)
+polygon = PackedVector2Array(-707.977, 584, 343.023, 783, -677.977, 1012)
+
+[node name="RightCol" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(1636, 614, 1640, 872, 687, 800)
+
+[node name="LeftPart" type="Polygon2D" parent="."]
+modulate = Color(0.803922, 0.160784, 0.0470588, 1)
+position = Vector2(93, 47)
+texture = SubResource("CanvasTexture_7nqy7")
+polygon = PackedVector2Array(-800, 538, 271, 737, -779, 961)
+
+[node name="RightPart" type="Polygon2D" parent="."]
+modulate = Color(0.803922, 0.160784, 0.0470588, 1)
+position = Vector2(-182, 64)
+texture = SubResource("CanvasTexture_vl7pt")
+polygon = PackedVector2Array(1822, 550, 839, 733, 1827, 813)

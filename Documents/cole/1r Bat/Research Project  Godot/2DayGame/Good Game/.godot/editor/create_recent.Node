@@ -1,0 +1,15 @@
+Button
+Control
+Timer
+CollisionPolygon2D
+Polygon2D
+PointLight2D
+StaticBody2D
+Label
+TouchScreenButton
+CollisionShape2D
+CharacterBody2D
+Sprite2D
+Node2D
+Node
+AudioStreamPlayer

@@ -1,0 +1,102 @@
+[gd_scene load_steps=7 format=3 uid="uid://c1ph58dn7df3d"]
+
+[ext_resource type="FontFile" uid="uid://bo3rscy3vi4mk" path="res://assets/MartianMono_SemiExpanded-Bold.ttf" id="1_75p3p"]
+[ext_resource type="Script" path="res://menu.gd" id="1_uqwhq"]
+[ext_resource type="Theme" uid="uid://d172p8yut0xgq" path="res://ILikeThisFont.tres" id="2_k2ake"]
+[ext_resource type="AudioStream" uid="uid://bvuet1jc4ty03" path="res://assets/bgsong.mp3" id="3_hk54v"]
+[ext_resource type="AudioStream" uid="uid://b3brdodfnwxls" path="res://assets/clickSF.wav" id="5_wvaq4"]
+
+[sub_resource type="Theme" id="Theme_u62mi"]
+default_font = ExtResource("1_75p3p")
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_uqwhq")
+metadata/_edit_vertical_guides_ = [286.0, 794.0]
+
+[node name="PlayButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -258.0
+offset_top = -105.0
+offset_right = 258.0
+offset_bottom = 105.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_u62mi")
+theme_override_font_sizes/font_size = 130
+text = "Play"
+
+[node name="SettingsBt" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = 174.0
+offset_right = 254.0
+offset_bottom = 338.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_u62mi")
+theme_override_font_sizes/font_size = 65
+text = "Settings"
+text_overrun_behavior = 1
+
+[node name="CreditsButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -251.0
+offset_top = 395.0
+offset_right = 255.0
+offset_bottom = 551.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_u62mi")
+theme_override_font_sizes/font_size = 83
+text = "Credits
+"
+clip_text = true
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -359.0
+offset_top = 601.0
+offset_right = 330.0
+offset_bottom = 688.0
+grow_horizontal = 2
+rotation = -0.13439
+theme = ExtResource("2_k2ake")
+theme_override_font_sizes/font_size = 70
+text = "Max Score: 69
+"
+
+[node name="BgMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_hk54v")
+volume_db = -34.667
+autoplay = true
+
+[node name="ClickSF" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_wvaq4")
+
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="SettingsBt" to="." method="_on_settings_bt_pressed"]
+[connection signal="pressed" from="CreditsButton" to="." method="_on_credits_button_pressed"]

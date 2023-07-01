@@ -1,0 +1,6 @@
+res://menu.tscn
+res://game.tscn
+res://obstacle.tscn
+res://obstacle.gd
+res://Player.gd
+res://game.gd
